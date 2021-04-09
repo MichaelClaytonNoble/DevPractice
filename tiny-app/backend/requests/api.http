@@ -1,0 +1,29 @@
+//use the 3 hashes or this will break the code 
+###create a question
+
+POST http://127.0.0.1:5000/api/questions
+Content-Type: application/json
+
+{
+  "name": "Mark Rooeuoeudoeuoeu",
+  "text": "this is a test i hope works",
+  "repo": "repo",
+  "live": "live"
+}
+
+### view questions
+GET http://127.0.0.1:5000/api/questions
+Content-Type: application/json
+
+### edit a question
+PATCH http://127.0.0.1:5000/api/questions/606f580d192d4e18416c3695
+Content-Type: application/json
+
+{
+  "answered": true,
+  "name": "XXXXXX"
+}
+### delete a question 
+DELETE http://127.0.0.1:5000/api/questions/606f5581a1ec6317297abeb2
+Content-Type: application/json
+
